@@ -441,12 +441,13 @@ body {
 
 /* project done section */
 
-.project-heading{
-    margin: 30px ;
-    padding: 50px ;
+
+
+.project-heading {
+    margin: 30px;
+    padding: 50px;
     box-sizing: border-box;
 }
-
 
 .slider-container {
     width: 100%;
@@ -466,16 +467,15 @@ body {
 }
 
 .slide {
-    min-width: 35.33%;  /* Show 3 boxes at once */
+    min-width: 35.33%;  /* Show 3 boxes at once on larger screens */
     position: relative;
     display: flex;
     justify-content: space-around;
     padding: 2px;
-   
 }
 
 .project-box {
-    width: 35%;  /* Decrease the box size */
+    width: 36%;  /* Decrease the box size */
     height: 300px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -531,6 +531,19 @@ body {
 .arrow-right {
     right: 10px;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .slide {
+        min-width: 50%;  /* Show 2 boxes at once on medium screens */
+    }
+
+    .project-box {
+        width: 48%;  /* Adjust project box width */
+        height: 350px;  /* Increase height for better visibility */
+    }
+}
+
 
 
 
