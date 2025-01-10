@@ -1,108 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Coding Skills</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #343a40;
+        }
 
-    .skills-container {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
-      text-align: center;
-    }
+        .services-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #2575fc;
+        }
 
-    .skills-header {
-      font-size: 2em;
-      color: #007bff;
-      margin-bottom: 20px;
-    }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 0 10px;
-    }
+        .service {
+            position: relative;
+            width: 350px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-    .skill-item {
-      background-color: #ffffff;
-      border: 2px solid #007bff;
-      border-radius: 10px;
-      padding: 20px;
-      transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-      overflow: hidden;
-      cursor: pointer;
-    }
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
 
-    .skill-item:hover {
-      transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
-      background-color: #1c82cb;
-    }
+        .service img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.5s;
+            opacity: 0.8;
+        }
 
-    .skill-img {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto 10px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #007bff;
-      transition: transform 0.3s, border-color 0.3s;
-    }
+        .service:hover img {
+            opacity: 0.6;
+        }
 
-    .skill-img:hover {
-      transform: scale(1.1);
-      border-color: #0056b3;
-    }
+        .service .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding: 20px;
+            opacity: 0;
+            background: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s;
+        }
 
-    .skill-name {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
+        .service:hover .overlay {
+            opacity: 1;
+        }
 
-    @media (max-width: 600px) {
-      .skills-header {
-        font-size: 1.5em;
-      }
-    }
-  </style>
+        .service .index {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #ff6b6b;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+    </style>
 </head>
 <body>
 
-  <div class="skills-container">
-    <h1 class="skills-header">My Coding Skills</h1>
-    <div class="skills-grid">
-      <div class="skill-item">
-        <img src="https://via.placeholder.com/100" alt="HTML" class="skill-img">
-        <p class="skill-name">HTML</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://via.placeholder.com/100" alt="CSS" class="skill-img">
-        <p class="skill-name">CSS</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://via.placeholder.com/100" alt="Python" class="skill-img">
-        <p class="skill-name">Python</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://via.placeholder.com/100" alt="Java" class="skill-img">
-        <p class="skill-name">Java</p>
-      </div>
-      <div class="skill-item">
-        <img src="https://via.placeholder.com/100" alt="JavaScript" class="skill-img">
-        <p class="skill-name">JavaScript</p>
-      </div>
+<section class="services">
+    <h2 class="services-title">My Expertise</h2>
+    <div class="service">
+        <div class="index">01</div>
+        <img src="https://via.placeholder.com/350x250" alt="Web Development">
+        <div class="overlay">Web Development</div>
     </div>
-  </div>
+    <div class="service">
+        <div class="index">02</div>
+        <img src="https://via.placeholder.com/350x250" alt="Graphic Design">
+        <div class="overlay">Graphic Design</div>
+    </div>
+    <div class="service">
+        <div class="index">03</div>
+        <img src="https://via.placeholder.com/350x250" alt="SEO Optimization">
+        <div class="overlay">SEO Optimization</div>
+    </div>
+    <div class="service">
+        <div class="index">04</div>
+        <img src="https://via.placeholder.com/350x250" alt="Digital Marketing">
+        <div class="overlay">Digital Marketing</div>
+    </div>
+</section>
 
 </body>
 </html>
