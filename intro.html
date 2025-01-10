@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>Portfolio</title>
+
+    <style>
+        /* Optional: Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="ishansingh.com.np">
+                    <img src="image\ishan logo.png" alt="Logo">
+                </a>
+            </div>
+            
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="#" class="active" style="--navAni:1">Home</a></li>
+                <li><a href="#" style="--navAni:2">About</a></li>
+                <li><a href="#skills" style="--navAni:3">Skills</a></li> <!-- Updated to link to Skills section -->
+                <li><a href="#" style="--navAni:4">Portfolio</a></li>
+                <li><a href="#" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="main">
+            <div class="detail">
+                <h3>Hi, It's Me</h3>
+                <h1>I'm <span style="color:#f9532d;">Ishan Singh</span></h1>
+                <p>I'm a professional Software Engineer and Developer And "Cyber Security Enthusiast.. My Main Goal to help & Satisfy the Local & Global Clients by web development solutions and software development services.</p>
+                <div class="cv">
+                    <a href="https://scarlet-lottie-74.tiiny.site" target="_blank">
+                        <button>View Resume</button>
+                        <a href="https://scarlet-lottie-74.tiiny.site" target="_blank">
+                            <button>Book Me</button>
+                        </a>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/ishan-singh-61a0701b2/" style="--socialAni:1" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/ishan.singh_7" style="--socialAni:2" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/ishansingh7" style="--socialAni:3" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.facebook.com/ishan.thakuri0" target="_blank" style="--socialAni:4"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="tel:+917483937126" style="--socialAni:4" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://twitter.com/ishansingh2015" style="--socialAni:6" target="_blank"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+            <div class="img-sec">
+                <div class="images">
+                    <img src="image\pp.png" alt="" class="img-w">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <h1 class="skills-header">Programming skills </h1>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="image\skills\java.png" alt="java" class="skill-img">
+                    <p class="skill-name">JAVA</p>
+                </div>
+                <div class="skill-item">
+                    <img src="image\skills\python.png" alt="Python" class="skill-img">
+                    <p class="skill-name">Python</p>
+                </div>
+                <div class="skill-item">
+                    <img src="image\skills\c++.png" alt="C" class="skill-img">
+                    <p class="skill-name">C and C++</p>
+                </div>
+                <div class="skill-item">
+                    <img src="image\skills\html.png" alt="Java" class="skill-img">
+                    <p class="skill-name">HTML & CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="image\skills\javascript.png" alt="JavaScript" class="skill-img">
+                    <p class="skill-name">JavaScript</p>
+                </div>
+            </div>
+        </div>
+        <!-- Backend  Section -->
+        <div class="skills-container">
+            <h1 class="skills-header">Backend Management Skills </h1>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="image\backend\nodejs.png" alt="java" class="skill-img">
+                    <p class="skill-name">NodeJS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="image\backend\express.png" alt="Python" class="skill-img">
+                    <p class="skill-name">ExpressJS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="image\backend\django.png" alt="C" class="skill-img">
+                    <p class="skill-name">Django</p>
+                </div>
+                <div class="skill-item">
+                    <img src="image\backend\fastApi.png" alt="Java" class="skill-img">
+                    <p class="skill-name">FastAPI</p>
+                </div>
+                <div class="skill-item">
+                    <img src="image\backend\ngnx.png" alt="JavaScript" class="skill-img">
+                    <p class="skill-name">NGINX</p>
+                </div>
+            </div>
+        </div>
+        <div class="skills-container">
+            <h1 class="skills-header">Data Base Management </h1>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="image\backend\batabase\sql.png" alt="SQL" class="skill-img">
+                    <p class="skill-name">SQL</p>
+                </div>
+                <div class="skill-item">
+                    <img src="image\backend\batabase\mangodb.png" alt="Python" class="skill-img">
+                    <p class="skill-name">MangoDB</p>
+                </div>
+                <div class="skill-item">
+                    <img src="image\backend\batabase\oracle.png" alt="Python" class="skill-img">
+                    <p class="skill-name">Oracle Database</p>
+                </div>
+                </div>
+               
+    </section>
+<!--end of skill section-->
+    <script src="script.js"></script>   
+</body>
+
+</html>

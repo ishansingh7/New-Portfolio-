@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Coding Skills</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .skills-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .skills-header {
+      font-size: 2em;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .skill-item {
+      background-color: #ffffff;
+      border: 2px solid #007bff;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .skill-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
+      background-color: #1c82cb;
+    }
+
+    .skill-img {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #007bff;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+
+    .skill-img:hover {
+      transform: scale(1.1);
+      border-color: #0056b3;
+    }
+
+    .skill-name {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .skills-header {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="skills-container">
+    <h1 class="skills-header">My Coding Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img src="https://via.placeholder.com/100" alt="HTML" class="skill-img">
+        <p class="skill-name">HTML</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://via.placeholder.com/100" alt="CSS" class="skill-img">
+        <p class="skill-name">CSS</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://via.placeholder.com/100" alt="Python" class="skill-img">
+        <p class="skill-name">Python</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://via.placeholder.com/100" alt="Java" class="skill-img">
+        <p class="skill-name">Java</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://via.placeholder.com/100" alt="JavaScript" class="skill-img">
+        <p class="skill-name">JavaScript</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
