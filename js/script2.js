@@ -20,4 +20,4 @@ function moveSlide(direction) {
     document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-setInterval(changeSlide, 50000); // Change slide every 3 seconds
+setInterval(changeSlide, 7500); // Change slide every 3 seconds

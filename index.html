@@ -35,10 +35,10 @@
             </label>
             <ul>
                 <li><a href="#" class="active" style="--navAni:1">Home</a></li>
-                <li><a href="#" style="--navAni:2">About</a></li>
+                <li><a href="#" style="--navAni:2">Certification</a></li>
                 <li><a href="#skills" style="--navAni:3">Skills</a></li> <!-- Updated to link to Skills section -->
                 <li><a href="#services" style="--navAni:4">Services</a></li>
-                <li><a href="#" style="--navAni:5">Contact</a></li>
+                <li><a href="#Projects" style="--navAni:5">Projects</a></li>
             </ul>
             <label class="mode">
                 <input type="checkbox" id="darkModeToggle">
@@ -202,71 +202,81 @@
         <img src="image\services\project management.png" alt="Digital Marketing">
         <div class="overlay">Project Management</div>
     </div>
+    
 </section>
 
-  <!--Project Done-->
-  <h2 class="title">My Project  And Works</h2>
-  <section class="project-heading">
-  <div class="slider-container">
-    <div class="slider">
-        <div class="slide">
-            <div class="project-box">
-                <img src="image\project\neo.png" alt="Project 1">
-                <div class="project-details">
-                    <h2>Neo Valley Eduaction</h2>
-                    <p>Description of project 1...</p>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="image\project\nepalresalee.png" alt="Project 2">
-                <div class="project-details">
-                    <h2>Nepal Resale </h2>
-                    <p>Nepal Resale.</p>
-                </div>
+
+  <!--Project section Done-->
+
+
+  <h2  id ="Projects" class="title">My Project  And Works</h2>
+  <section class="projects-section" id="project">
+    
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="image\project\nepal resale.png" alt="Project 1" class="project-image">
+            <div class="project-info">
+                <h3 class="project-title">Nepal Resale </h3>
+                <p class="project-description">This Automobile Buying and Selling platform using WordPress, a vendor
+                    management system, and HTML codes as a freelancer.. </p>
+                <a href="https://nepalresale.com" target="_blank" class="project-link">View Project</a>
             </div>
         </div>
-        <div class="slide">
-            <div class="project-box">
-                <img src="image\project\bank.png" alt="Project 3">
-                <div class="project-details">
-                    <h2>Online Banking System</h2>
-                    <p>Description of project 3...</p>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="image\project\language.png" alt="Project 4">
-                <div class="project-details">
-                    <h2>language Translator </h2>
-                    <p>Description of project 4...</p>
-                </div>
+        <div class="project-card">
+            <img src="image\project\neo valley education.png" alt="Project 1" class="project-image">
+            <div class="project-info">
+                <h3 class="project-title">Neo Valley Education</h3>
+                <p class="project-description">This is the Education Consultancy website, developed in WordPress 
+                with different plugins and HTML as a freelancer.</p>
+                <a href=https://neovalleyeducation.com" class="project-link">View Project</a>
             </div>
         </div>
-        <div class="slide">
-            <div class="project-box">
-                <img src="image\project\pohoramalae.png" alt="Project 5">
-                <div class="Pohor Malai">
-                    <h2>Phohor Malai</h2>
-                    <p>Description of project 5...</p>
-                </div>
-            </div>
-            <div class="project-box">
-                <img src="project6.jpg" alt="Project 6">
-                <div class="project-details">
-                    <h2>Project 6 Title</h2>
-                    <p>Description of project 6...</p>
-                </div>
+
+        <div class="project-card">
+            <img src="image\project\lnaguage.png" alt="Project 1" class="project-image">
+            <div class="project-info">
+                <h3 class="project-title">language Translator</h3>
+                <p class="project-description">This web Application  which transaltes all kinds of the language . 
+                    It is developed using python , HTML,Django ,CSS</p>
+                <a href="https://github.com/ishansingh7/python-language-translator-" class="project-link">View Project</a>
             </div>
         </div>
+        <div class="project-card">
+            <img src="image\project\pohoramalae.png" alt="Project 1" class="project-image">
+            <div class="project-info">
+                <h3 class="project-title">Phohor Malai</h3>
+                <p class="project-description">This project was developed during the Project Expo at the end of the second semester. 
+                    It is built using HTML, 
+                    CSS, JavaScript, and an external website to manage environmental waste.</p>
+                <a href="https://github.com/ishansingh7/waste-management-website" class="project-link">View Project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="image\project\bank.png" alt="Project 1" class="project-image">
+            <div class="project-info">
+                <h3 class="project-title">Bank Management system</h3>
+                <p class="project-description">This application is developed in 
+                    <br>Java and SQL database management 
+                    during an internship at a training company.</p>
+                <a href="https://github.com/ishansingh7/Banking-Application" class="project-link">View Project</a>
+            </div>
+        </div>
+        <!-- Add more project cards -->
     </div>
-
-    <div class="arrow arrow-left" onclick="moveSlide(-1)">&#10094;</div>
-    <div class="arrow arrow-right" onclick="moveSlide(1)">&#10095;</div>
-</div>
 </section>
-    <!--end of service 1-->
-    <script src="script2.js"></script>
+ 
+    <!--end of Project Section-->
 
-    <script src="script.js"></script>
+<!--JavaScript Section-->
+    <script src="js/script2.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <footer>
+        
+        <p>&copy; 2024 ISHAN . All rights reserved.</p>
+        
+    </footer>
 </body>
 
 </html>
