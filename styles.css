@@ -1,0 +1,208 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #312a2a;
+    color: #444;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #29262e, #2575fc);
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar img {
+    height: 60px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffafbd;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #f6e4e4;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.certificates {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certificate-card {
+    background: linear-gradient(135deg, #451d24, #3f342e);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card h3 {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.certificate-card p {
+    font-size: 0.9em;
+    color: #fff;
+    padding: 0 15px 15px;
+}
+
+.certificate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
+.certificate-card:hover img {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Modal (Popup) styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 500px;
+    max-width: 90%;
+}
+
+.modal img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cancel-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background: #2575fc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cancel-button:hover {
+    background: #6a11cb;
+}
+
+.modal.fade-in {
+    display: flex;
+    opacity: 1;
+}
+footer {
+    background-image: url('photo\ishh.jpeg'); /* Your background image URL */
+    background-color: rgba(0, 0, 0, 0.5); /* Your desired background color with opacity */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+}
+
+
+@media (max-width: 768px) {
+    .certificates {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificate-card {
+        width: 90%;
+    }
+}

@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+   
     scroll-behavior: smooth;
 }
 
@@ -25,7 +26,7 @@ body {
 }
 
 /* Genral */
-.container {
+.container{
     padding: 0 8.4rem;
 }
 
@@ -441,9 +442,6 @@ body {
 
 /* project done section */
 
-.projects-section {
-    padding: 100px;
-}
 
 .projects-grid {
     display: grid;
@@ -509,6 +507,46 @@ body {
         height: 350px;  /* Increase height for better visibility */
     }
 }
+/*contacts*/
+.contact-me {
+    width: 100vw;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-link {
+    text-decoration: none; /* Remove underline */
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+    color: black; /* Change link color */
+  }
+  
+  .contact-me h1 {
+    font-size: 56px;
+    color: #bad619;
+    font-family: "Libre Baskerville", serif;
+    
+    font-weight: 700;
+  }
+  
+  .contact {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .contact-card {
+    background-color: #fec86a;
+    padding: 1px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    margin-top: 7.5vh;
+  }
+
+
+
 footer {
     background-image: url('photo\ishh.jpeg'); /* Your background image URL */
     background-color: rgba(0, 0, 0, 0.5); /* Your desired background color with opacity */

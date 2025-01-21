@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="image\ishan logo.png" alt="Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+          
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="index.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>My Certificates</h1>
+        <div class="certificates">
+            <div class="certificate-card" onclick="openModal(this)">
+                <img src="certificate\cyber security.png" alt="Certificate 1">
+                <h3>Cyber Security</h3>
+                <p></p>
+            </div>
+            <div class="certificate-card" onclick="openModal(this)">
+                <img src="certificate\DSa_page-0001.jpg" alt="Certificate 2">
+                <h3>Data Structure And Algorithm </h3>
+                <p></p>
+            </div>
+            <div class="certificate-card" onclick="openModal(this)">
+                <img src="certificate\java.png" alt="Certificate 3">
+                <h3>Java Programing (Beginner to Master)</h3>
+                <p>Brief description about the certificate.</p>
+            </div>
+            <div class="certificate-card" onclick="openModal(this)">
+                <img src="certificate\tata.jpg" alt="Certificate 4">
+                <h3>Cyber Security from TATA</h3>
+                <p></p>
+            </div>
+            <div class="certificate-card" onclick="openModal(this)">
+                <img src="certificate\python part 1.jpg" alt="Certificate 5">
+                <h3>Python Part 1</h3>
+                <p></p>
+            </div>
+            <div class="certificate-card" onclick="openModal(this)">
+                <img src="certificate\python part 2_page-0001.jpg" alt="Certificate 6">
+                <h3>Python Part 2</h3>
+                <p></p>
+            </div>
+            <div class="certificate-card" onclick="openModal(this)">
+              <img src="certificate\c online_page-0001.jpg" alt="Certificate 6">
+              <h3>C Certificate </h3>
+              <p></p>
+          </div>
+          <div class="certificate-card" onclick="openModal(this)">
+            <img src="certificate\codecafe.jpg" alt="Certificate 6">
+            <h3>CodeCafe (Linked list)</h3>
+            <p></p>
+        </div>
+        <div class="certificate-card" onclick="openModal(this)">
+          <img src="certificate\python bootcam (2)_page-0001.jpg" alt="Certificate 6">
+          <h3>python Bootcamp</h3>
+          <p></p>
+      </div>
+      <div class="certificate-card" onclick="openModal(this)">
+        <img src="certificate\solo.jpg" alt="Certificate 6">
+        <h3>C from Solo Learn Certificate</h3>
+        <p></p>
+    </div>
+    <div class="certificate-card" onclick="openModal(this)">
+      <img src="certificate\sql_basic certificate_page-0001.jpg" alt="Certificate 6">
+      <h3>SQL Basic </h3>
+      <p</p>
+  </div>
+        </div>
+    </div>
+
+    <!-- Modal for image zoom -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="Full-size certificate">
+            <button class="cancel-button" onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(cardElement) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("modal-img");
+            const imgElement = cardElement.querySelector("img");
+
+            modalImg.src = imgElement.src;
+            modal.classList.add("fade-in");
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.classList.remove("fade-in");
+        }
+    </script>
+     <footer>
+        
+        <p>&copy; 2025 ISHAN . All rights reserved.</p>
+        
+    </footer>
+</body>
+</html>
