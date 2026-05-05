@@ -1,0 +1,170 @@
+/* Responsive / Improved intro.css
+   - Replace your current intro.css with this file (or merge)
+   - Focus: fluid containers, scalable images, accessible nav, improved media queries
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+:root{
+  --primary-color:#f9532d;
+  --accent:#244D61;
+  --bg:#f4f6f8;
+  --dark:#1F252E;
+  --container-max:1200px; /* max width used for centered layout */
+}
+
+/* Basic reset & utilities */
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:'Outfit',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;background:var(--bg);color:#222}
+img{max-width:100%;display:block}
+
+/* Centered fluid container */
+.container{width:100%;max-width:var(--container-max);margin:0 auto;padding:0 1.5rem}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:999;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.page-header{display:flex;align-items:center;justify-content:space-between;padding:0.9rem 0}
+.logo img{height:48px;width:auto}
+
+/* NAV */
+ul{display:flex;gap:1rem;list-style:none;align-items:center}
+ul li a{display:inline-block;padding:.35rem .85rem;border-radius:999px;font-weight:600;text-decoration:none;color:#122;transition:all .2s}
+ul li a:hover, ul li a.active{color:var(--primary-color)}
+
+/* Mobile menu button */
+.menu{display:none;font-size:1.4rem;color:var(--accent)}
+#click{display:none}
+
+/* Dark mode toggle */
+.mode{display:flex;align-items:center;gap:.5rem}
+.mode i{color:var(--primary-color);font-size:1.2rem}
+
+/* HERO / MAIN */
+.main{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;padding:3rem 0}
+.detail h3{font-size:1.125rem;color:#666;margin-bottom:.4rem}
+.detail h1{font-size:2.6rem;line-height:1.05;margin-bottom:1rem}
+.detail p{font-size:1rem;color:#444}
+
+.cv{display:flex;gap:1rem;margin-top:1.4rem;flex-wrap:wrap}
+.cv button{height:44px;padding:0 1.2rem;border-radius:8px;border:2px solid #fec86a;background:transparent;color:#fec86a;cursor:pointer}
+.cv button:hover{background:#fec86a;color:#222}
+
+.social{display:flex;gap:.9rem;margin-top:1.25rem;flex-wrap:wrap}
+.social a{display:grid;place-items:center;width:40px;height:40px;border-radius:999px;border:1.6px solid var(--accent);color:var(--accent);text-decoration:none}
+
+.img-sec{display:flex;justify-content:center}
+.images{width:100%;max-width:360px;margin-left:0}
+.images img.img-w{width:100%;height:auto;border-radius:8px}
+
+/* Skills */
+.skills-container{padding:2.25rem 0}
+.skills-header{font-size:1.5rem;color:var(--accent);margin-bottom:1rem}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem}
+.skill-item{background:#fff;border-radius:10px;padding:1rem;text-align:center;box-shadow:0 6px 12px rgba(16,24,40,.06);transition:transform .18s}
+.skill-item:hover{transform:translateY(-6px)}
+.skill-img{width:72px;height:72px;border-radius:50%;object-fit:cover;margin:0 auto}
+.skill-name{margin-top:.6rem;font-weight:600}
+
+/* Services */
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;padding:2rem 0}
+.service{position:relative;overflow:hidden;border-radius:12px;min-height:180px;display:flex;align-items:center;justify-content:center}
+.service img{position:absolute;inset:0;object-fit:cover;opacity:.85}
+.service .overlay{position:relative;padding:1rem;color:#fff;font-weight:700;text-align:center}
+
+/* Projects */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1.5rem 0}
+.project-card{border-radius:10px;overflow:hidden;background:#0b1220;color:#fff}
+.project-image{height:160px;object-fit:cover}
+.project-info{padding:1rem}
+.project-title{color:#ff6b5e;font-weight:700}
+.project-description{color:#cbd5e1}
+.project-link{display:inline-block;margin-top:.6rem;padding:.45rem .7rem;border-radius:8px;background:#ff6b5e;color:#fff;text-decoration:none}
+
+/* Startup */
+.startup-section{background:linear-gradient(180deg,#0f1724 0,#111827 100%);color:#eaeefb;padding:2rem;border-radius:18px;margin:2rem 0;text-align:center}
+.logo-frame{width:140px;height:140px;margin:0 auto 1rem;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.logo-frame img{width:100%;height:auto}
+
+/* Clients */
+.clients-section{padding:2rem 0}
+.clients-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;align-items:center}
+.client-card{background:#fff;border-radius:10px;padding:1rem;text-align:center;box-shadow:0 6px 12px rgba(2,6,23,.06)}
+.client-card img{height:72px;object-fit:contain}
+.client-name{color:var(--accent);font-weight:700;margin-top:.5rem}
+
+/* Contact */
+.contact-container{display:flex;gap:0;flex-wrap:wrap;background:linear-gradient(180deg,#0b1220,#0f1724);border-radius:12px;padding:0.25rem;overflow:hidden}
+.contact-form,.contact-info{flex:1;min-width:260px;padding:1.25rem 1.5rem;color:#fff}
+.input-box{position:relative;margin-bottom:1rem}
+.input-box input,.input-box textarea{width:100%;padding:12px;border-radius:6px;border:1px solid rgba(255,255,255,.08);background:transparent;color:#fff}
+.input-box label{position:absolute;left:10px;top:10px;color:rgba(255,255,255,.6);pointer-events:none;font-size:.9rem}
+.send-btn{background:var(--primary-color);border:none;padding:10px 16px;border-radius:8px;color:#fff;cursor:pointer}
+
+/* Footer */
+footer{padding:1rem 0;text-align:center;color:#fff;background:#0b1220}
+
+/* Small tweaks for accessibility */
+a:focus{outline:3px solid rgba(249,83,45,.18);outline-offset:2px}
+
+/* ------------- RESPONSIVE QUERIES -------------- */
+
+/* Large screens: slightly increase spacing */
+@media (min-width:1200px){
+  .detail h1{font-size:3.2rem}
+  .main{padding:4rem 0}
+}
+
+/* Tablet */
+@media (max-width:1024px){
+  .container{padding:0 1rem}
+  .detail h1{font-size:2.4rem}
+  .images{max-width:320px}
+}
+
+/* Small tablets / large phones */
+@media (max-width:768px){
+  /* stack hero */
+  .main{grid-template-columns:1fr;padding:2rem 0;gap:1.25rem}
+  .images{order:-1;margin-bottom:.25rem;max-width:320px}
+  .detail h1{font-size:2rem}
+  .cv{justify-content:flex-start}
+
+  /* nav -> hamburger */
+  .menu{display:block}
+  ul{position:fixed;left:-110%;top:64px;right:0;bottom:0;background:#fff;flex-direction:column;padding:2rem;gap:1.25rem;transition:left .28s ease;z-index:998}
+  #click:checked ~ ul{left:0}
+}
+
+/* Mobile phones */
+@media (max-width:480px){
+  :root{--container-max:100%;}
+  .logo img{height:42px}
+  .detail h1{font-size:1.6rem}
+  .detail p{font-size:.95rem}
+  .images{max-width:260px}
+
+  .skill-img{width:60px;height:60px}
+  .project-image{height:140px}
+  .service{min-height:150px}
+
+  /* contact stacks */
+  .contact-container{flex-direction:column}
+  .contact-form,.contact-info{padding:1rem}
+}
+
+/* Very small phones - tighten spacing */
+@media (max-width:360px){
+  .detail h1{font-size:1.4rem}
+  .detail p{font-size:.92rem}
+  .cv button{height:40px;padding:0 .6rem;font-size:.92rem}
+  .social a{width:36px;height:36px}
+}
+
+/* Utility helper for hiding images if needed */
+@media (max-width:420px){
+  /* if hero image is too large on some small screens you can hide it by uncommenting */
+  /* .images{display:none} */
+}
+
+/* End of file */
