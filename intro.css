@@ -181,10 +181,16 @@ li a:hover {
     color: #34353b;
   }
 
+<<<<<<< HEAD
 /* Image Section */
 .images img {
     position: relative;
      
+=======
+
+.images img {
+    position: relative;
+>>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
 }
 
 .images::before {
@@ -193,7 +199,11 @@ li a:hover {
     width: 100%;
     height: calc(100% - 130px);
     left: 50%;
+<<<<<<< HEAD
     bottom: 6px;
+=======
+    bottom: 0;
+>>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
     transform: translateX(-50%);
     border-radius: 6px;
 }
@@ -204,6 +214,7 @@ li a:hover {
 }
 
 .images {
+<<<<<<< HEAD
     width: 50%;
     margin-left: auto;
     position: relative;
@@ -216,6 +227,13 @@ li a:hover {
     margin-top: 1px;
 }
 
+=======
+    width: 80%;
+    margin-left: auto;
+    position: relative;
+    z-index: -1;
+}
+>>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
 .images {
     opacity: 0;
     animation: imageAni 1s ease forwards;
@@ -533,9 +551,15 @@ body {
   .startup-section {
     text-align: center;
    
+<<<<<<< HEAD
     border-radius: 100px;
     padding: 40px;
     box-shadow: 0 4px 6px rgba(96, 88, 88, 0.1);
+=======
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+>>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -568,9 +592,15 @@ body {
 
 .startup-section p {
     font-size: 1rem;
+<<<<<<< HEAD
     color: #f7f4fb;
     margin-bottom: 80px;
     line-height: 1.9;
+=======
+    color: #917eb1;
+    margin-bottom: 20px;
+    line-height: 1.6;
+>>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
 }
 
 .social-links {
@@ -641,6 +671,7 @@ body {
 }
 
 /*contacts*/
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -791,6 +822,65 @@ body {
 }
 
 
+=======
+
+.contact-me {
+    padding: 2rem;
+   
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.contact-me h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #83e91c;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-card {
+    background: #e4d3d3;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 280px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 1rem;
+}
+
+.contact-link i {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+>>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
 /* Responsive styles */
 @media (max-width: 768px) {
     .contact {
@@ -822,6 +912,7 @@ body {
 }
 
 
+<<<<<<< HEAD
 /*  Cliet Section  End*/
   body {
       font-family: "Poppins", sans-serif;
@@ -922,6 +1013,9 @@ body {
 
 
 /*end of client*/
+=======
+
+>>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
 footer {
     background-image: url('photo\ishh.jpeg'); /* Your background image URL */
     background-color: rgba(0, 0, 0, 0.5); /* Your desired background color with opacity */
