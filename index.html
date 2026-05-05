@@ -4,647 +4,478 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<<<<<<< HEAD
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="image/ishan logo.png">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="intro.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
-
-=======
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="intro.css">
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-    <title>ISHAAN</title>
-
-    <style>
-        /* Optional: Smooth scrolling for anchor links */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <title>Ishan Singh | Portfolio</title>
 </head>
 
 <body>
-    <header class="container">
-        <div class="page-header">
-            <div class="logo">
-                <a href="ishansingh.com.np">
-                    <img src="image\ishan logo.png" alt="Logo">
-                </a>
-            </div>
+    <header class="site-header">
+        <div class="container page-header">
+            <a href="#" class="logo" aria-label="Ishan Singh home">
+                <img src="image/ishan logo.png" alt="Ishan Singh logo">
+            </a>
 
             <input type="checkbox" id="click">
-
-            <label for="click" class="mainicon">
-                <div class="menu">
-                    <i class='bx bx-menu'></i>
-                </div>
+            <label for="click" class="mainicon" aria-label="Toggle navigation">
+                <span class="menu">
+                    <i class="bx bx-menu"></i>
+                </span>
             </label>
-            <ul>
+
+            <ul class="nav-links">
                 <li><a href="#" class="active" style="--navAni:1">Home</a></li>
                 <li><a href="certiffication.html" style="--navAni:2">Certifications</a></li>
-                <li><a href="#skills" style="--navAni:3">Skills</a></li> <!-- Updated to link to Skills section -->
+                <li><a href="#skills" style="--navAni:3">Skills</a></li>
                 <li><a href="#services" style="--navAni:4">Services</a></li>
-                <li><a href="#Projects" style="--navAni:5">Projects</a></li>
+                <li><a href="#projects" style="--navAni:5">Projects</a></li>
+                <li><a href="#contact" style="--navAni:6">Contact</a></li>
             </ul>
-            <label class="mode">
+
+            <label class="mode" aria-label="Toggle dark mode">
                 <input type="checkbox" id="darkModeToggle">
-                <i class='bx bxs-moon'></i>
+                <i class="bx bxs-moon"></i>
             </label>
         </div>
     </header>
 
-    <section class="container">
-        <div class="main">
-            <div class="detail">
-                <h3>Hi, It's Me</h3>
-                <h1>I'm <span style="color:#f9532d;">Ishan Singh</span></h1>
-<<<<<<< HEAD
-                <p>I’m a Full Stack & Software Engineer with strong expertise in web development,
-                    cloud technologies, tech consulting, project management, and problem-solving. I specialize in
-                    building scalable, efficient, and user-friendly software solutions.
-                    Passionate about delivering high-quality code and solving real-world problems
-                    through innovative and impactful technology</p>
-                <div class="cv">
-                   <a href="Resume\ishanResume.pdf" target="_blank">
-                        <button>View Resume</button>
+    <main>
+        <section class="hero-section">
+            <div class="container main">
+                <div class="detail">
+                    <p class="eyebrow">Software Engineer - Full Stack Developer - Tech Problem Solver</p>
+                    <h3>Hi, it's me</h3>
+                    <h1>I'm <span>Ishan Singh</span></h1>
+                    <p class="hero-copy">
+                        I'm a Full Stack and Software Engineer with strong expertise in web development,
+                        cloud technologies, tech consulting, project management, and problem-solving.
+                        I build scalable, efficient, and user-friendly digital products that solve real-world problems.
+                    </p>
 
-                        <a href="https://wa.me/917483937126" target="_blank">
-                            <button>Hire Me</button>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="Resume/ishanResume.pdf" target="_blank">View Resume</a>
+                        <a class="button button-secondary" href="https://wa.me/917483937126" target="_blank">Hire Me</a>
+                    </div>
+
+                    <div class="hero-highlights">
+                        <div class="highlight-card">
+                            <strong>Full Stack</strong>
+                            <span>Web apps, backend systems, and deployment</span>
+                        </div>
+                        <div class="highlight-card">
+                            <strong>Cloud and Ops</strong>
+                            <span>AWS foundations, APIs, and scalable delivery</span>
+                        </div>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/ishan-singh-61a0701b2/" style="--socialAni:1" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ishan.singh_7" style="--socialAni:2" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://github.com/ishansingh7" style="--socialAni:3" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                        <a href="https://www.facebook.com/ishan.thakuri0" style="--socialAni:4" target="_blank" aria-label="Facebook"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="tel:+917483937126" style="--socialAni:5" aria-label="Phone"><i class="bx bxl-whatsapp"></i></a>
+                        <a href="https://twitter.com/ishansingh2015" style="--socialAni:6" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="img-sec">
+                    <div class="images">
+                        <img src="image/ishan.jpg" alt="Portrait of Ishan Singh" class="img-w">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-block">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Capabilities</p>
+                    <h2>Skills That Power My Work</h2>
+                    <p>I work across software engineering, backend systems, cloud foundations, and practical product delivery.</p>
+                </div>
+
+                <div class="skills-cluster">
+                    <div class="skills-container">
+                        <h3 class="skills-header">Programming Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="image/skills/java.png" alt="Java" class="skill-img">
+                                <p class="skill-name">Java</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="image/skills/python.png" alt="Python" class="skill-img">
+                                <p class="skill-name">Python</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="image/skills/c++.png" alt="C and C++" class="skill-img">
+                                <p class="skill-name">C and C++</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="image/skills/html.png" alt="HTML and CSS" class="skill-img">
+                                <p class="skill-name">HTML and CSS</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="image/skills/javascript.png" alt="JavaScript" class="skill-img">
+                                <p class="skill-name">JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-container">
+                        <h3 class="skills-header">Backend Management Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="image/backend/nodejs.png" alt="NodeJS" class="skill-img">
+                                <p class="skill-name">NodeJS</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="image/backend/express.png" alt="ExpressJS" class="skill-img">
+                                <p class="skill-name">ExpressJS</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="image/backend/django.png" alt="Django" class="skill-img">
+                                <p class="skill-name">Django</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="image/backend/fastApi.png" alt="API Development" class="skill-img">
+                                <p class="skill-name">API Development</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="image/backend/ngnx.png" alt="NGINX" class="skill-img">
+                                <p class="skill-name">NGINX</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-container">
+                        <h3 class="skills-header">Database Management</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="image/backend/batabase/sql.png" alt="SQL" class="skill-img">
+                                <p class="skill-name">SQL</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="image/backend/batabase/mangodb.png" alt="MongoDB" class="skill-img">
+                                <p class="skill-name">MongoDB</p>
+                            </div>
+                            <div class="skill-item">
+                                <img src="image/backend/batabase/oracle.png" alt="Oracle Database" class="skill-img">
+                                <p class="skill-name">Oracle Database</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-block">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Expertise</p>
+                    <h2>Services I Offer</h2>
+                    <p>I help clients build digital products, strengthen systems, and move ideas into practical execution.</p>
+                </div>
+
+                <div class="services">
+                    <article class="service">
+                        <img src="image/services/softwaredevelopment.png" alt="Full Stack Development">
+                        <div class="service-overlay">
+                            <p class="service-tag">Build</p>
+                            <h3 class="service-title">Full Stack Development</h3>
+                            <p>Modern web applications with strong frontend and backend integration.</p>
+                        </div>
+                    </article>
+
+                    <article class="service">
+                        <img src="image/services/backenddep.png" alt="Backend Development">
+                        <div class="service-overlay">
+                            <p class="service-tag">Scale</p>
+                            <h3 class="service-title">Backend Development</h3>
+                            <p>Reliable APIs, business logic, integrations, and server-side architecture.</p>
+                        </div>
+                    </article>
+
+                    <article class="service">
+                        <img src="image/services/software.png" alt="Software Engineering">
+                        <div class="service-overlay">
+                            <p class="service-tag">Engineer</p>
+                            <h3 class="service-title">Software Engineering</h3>
+                            <p>Structured, efficient software solutions focused on performance and maintainability.</p>
+                        </div>
+                    </article>
+
+                    <article class="service">
+                        <img src="image/services/wordpress.png" alt="WordPress">
+                        <div class="service-overlay">
+                            <p class="service-tag">Launch</p>
+                            <h3 class="service-title">WordPress</h3>
+                            <p>Professional sites for businesses, portfolios, and consultancy brands.</p>
+                        </div>
+                    </article>
+
+                    <article class="service">
+                        <img src="image/services/digitalmarketin.png" alt="Digital Marketing">
+                        <div class="service-overlay">
+                            <p class="service-tag">Grow</p>
+                            <h3 class="service-title">Digital Marketing</h3>
+                            <p>Practical strategies to improve visibility, reach, and online engagement.</p>
+                        </div>
+                    </article>
+
+                    <article class="service">
+                        <img src="image/services/project management.png" alt="Project Management">
+                        <div class="service-overlay">
+                            <p class="service-tag">Lead</p>
+                            <h3 class="service-title">Project Management</h3>
+                            <p>Delivery planning, coordination, and focused execution for technical work.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-block">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Portfolio</p>
+                    <h2>Projects and Recent Work</h2>
+                    <p>A mix of freelance work, product ideas, and software projects built across web, AI, and operations.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="image/project/aiml.png" alt="HealthMate project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">HealthMate Symptom Checker</h3>
+                            <p class="project-description">An AI and ML healthcare project that predicts diseases and gives health suggestions using NLP and machine learning.</p>
+                            <div class="project-links">
+                                <a href="https://healthmate-symptom-checker-health-rem4.onrender.com" target="_blank" class="project-link">Live Demo</a>
+                                <a href="https://github.com/ishansingh7/HealthMate-Symptom-Checker-Health-Suggestion-Bot" target="_blank" class="project-link project-link-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="image/project/delivery.png" alt="Delivery tracking project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Delivery Tracking and Logistic</h3>
+                            <p class="project-description">A MERN-based logistics app for managing orders, delivery tracking, driver assignment, and real-time shipment workflows.</p>
+                            <div class="project-links">
+                                <a href="https://moveyeasy.vercel.app" target="_blank" class="project-link">Live Demo</a>
+                                <a href="https://github.com/ishansingh7/Delivery-Tracking-and-Logistic-Management" target="_blank" class="project-link project-link-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="image/project/tra.png" alt="TravelGo project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">TravelGo</h3>
+                            <p class="project-description">A travel platform concept for booking and managing flights, trains, buses, taxis, hotels, and tour packages in one place.</p>
+                            <div class="project-links">
+                                <a href="https://bespoke-daifuku-66ff35.netlify.app" target="_blank" class="project-link">Live Demo</a>
+                                <a href="https://github.com/ishansingh7/TravelGo?tab=readme-ov-file" target="_blank" class="project-link project-link-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="image/project/neo valley education.png" alt="Neo Valley Education project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Neo Valley Education</h3>
+                            <p class="project-description">A consultancy website developed in WordPress with custom content and plugin-based functionality for a freelance client.</p>
+                            <div class="project-links">
+                                <a href="https://neovalleyeducation.com" target="_blank" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="image/project/governmnet.png" alt="Government analytics dashboard project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Government Analytics Dashboard</h3>
+                            <p class="project-description">A modern dashboard concept for complaint tracking, ministry performance analysis, and transparency around budget and progress.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ishansingh7/Government-Analytics-Dashboaard" target="_blank" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </article>
+                     <article class="project-card">
+                        <img src="image\project\lnaguage.png" alt="Bank management system project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">language Translator</h3>
+                            <p class="project-description">This web Application which transaltes all kinds of the language .
+                        It is developed using python , HTML,Django ,.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ishansingh7/python-language-translator-" target="_blank" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </article>
+                     <article class="project-card">
+                        <img src="image\project\nepal resale.png" alt="Bank management system project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Nepal Resale</h3>
+                            <p class="project-description">TThis Automobile Buying and Selling platform using WordPress, a vendor
+                        management system, and HTML codes as a freelancer..,.</p>
+                            <div class="project-links">
+                                <a href="https://nepalresale.com" target="_blank" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="image/project/bank.png" alt="Bank management system project" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Bank Management System</h3>
+                            <p class="project-description">A Java and SQL application built during internship training to manage banking workflows and core account features.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ishansingh7/Banking-Application" target="_blank" class="project-link">View Project</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container">
+                <div class="startup-section">
+                    <div class="section-heading startup-heading">
+                        <p class="section-kicker">Startup</p>
+                        <h2>Nepal Technical Association</h2>
+                    </div>
+
+                    <div class="logo-frame">
+                        <img src="image/logonepal.jpg" alt="Nepal Technical Association logo">
+                    </div>
+
+                    <p class="startup-copy">
+                        Founded in 2020, this startup has grown around IT services, consulting, website creation,
+                        engineering support, software development, and digital marketing. The goal is simple:
+                        help businesses grow with practical technology, strong execution, and creative digital solutions.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://nepaltechnicalassociation.netlify.app" target="_blank" aria-label="Startup website">
+                            <img src="image/socail icons/logonepal1.png" alt="Nepal Technical Association site">
                         </a>
-
-
-=======
-                <p>I'm a professional Software Engineer and Developer And "Cyber Security Enthusiast.. My Main Goal to
-                    help & Satisfy the Local & Global Clients by web development solutions and software development
-                    services.</p>
-                <div class="cv">
-                    <a href="https://brown-waly-65.tiiny.site" target="_blank">
-                        <button>View Resume</button>
-                        <a href="https://wa.me/917483937126" target="_blank">
-                            <button>Hire Me</button>
-                          </a>
-                        
-                       
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-                    </a>
-                </div>
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/ishan-singh-61a0701b2/" style="--socialAni:1"
-                        target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/ishan.singh_7" style="--socialAni:2" target="_blank"><i
-                            class='bx bxl-instagram'></i></a>
-                    <a href="https://github.com/ishansingh7" style="--socialAni:3" target="_blank"><i
-                            class='bx bxl-github'></i></a>
-                    <a href="https://www.facebook.com/ishan.thakuri0" target="_blank" style="--socialAni:4"><i
-                            class='bx bxl-facebook-circle'></i></a>
-                    <a href="tel:+917483937126" style="--socialAni:4" target="_blank"><i
-                            class='bx bxl-whatsapp'></i></a>
-                    <a href="https://twitter.com/ishansingh2015" style="--socialAni:6" target="_blank"><i
-                            class='bx bxl-twitter'></i></a>
-                </div>
-            </div>
-            <div class="img-sec">
-                <div class="images">
-<<<<<<< HEAD
-                    <img src="image/ishan.jpg" alt="" class="img-w">
-=======
-                    <img src="image\pp.png" alt="" class="img-w">
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skill Section -->
-    <section id="skills" class="skills">
-        <div class="skills-container">
-            <h1 class="skills-header">Programming skills </h1>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <img src="image\skills\java.png" alt="java" class="skill-img">
-                    <p class="skill-name">JAVA</p>
-                </div>
-                <div class="skill-item">
-                    <img src="image\skills\python.png" alt="Python" class="skill-img">
-                    <p class="skill-name">Python</p>
-                </div>
-                <div class="skill-item">
-                    <img src="image\skills\c++.png" alt="C" class="skill-img">
-                    <p class="skill-name">C and C++</p>
-                </div>
-                <div class="skill-item">
-                    <img src="image\skills\html.png" alt="Java" class="skill-img">
-                    <p class="skill-name">HTML & CSS</p>
-                </div>
-                <div class="skill-item">
-                    <img src="image\skills\javascript.png" alt="JavaScript" class="skill-img">
-                    <p class="skill-name">JavaScript</p>
-                </div>
-            </div>
-        </div>
-        <!-- Backend  Section -->
-        <div class="skills-container">
-            <h1 class="skills-header">Backend Management Skills </h1>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <img src="image\backend\nodejs.png" alt="java" class="skill-img">
-                    <p class="skill-name">NodeJS</p>
-                </div>
-                <div class="skill-item">
-                    <img src="image\backend\express.png" alt="Python" class="skill-img">
-                    <p class="skill-name">ExpressJS</p>
-                </div>
-                <div class="skill-item">
-                    <img src="image\backend\django.png" alt="C" class="skill-img">
-                    <p class="skill-name">Django</p>
-                </div>
-                <div class="skill-item">
-                    <img src="image\backend\fastApi.png" alt="Java" class="skill-img">
-<<<<<<< HEAD
-                    <p class="skill-name">API Development</p>
-=======
-                    <p class="skill-name">FastAPI</p>
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-                </div>
-                <div class="skill-item">
-                    <img src="image\backend\ngnx.png" alt="JavaScript" class="skill-img">
-                    <p class="skill-name">NGINX</p>
-                </div>
-            </div>
-        </div>
-        <div class="skills-container">
-            <h1 class="skills-header">Data Base Management </h1>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <img src="image\backend\batabase\sql.png" alt="SQL" class="skill-img">
-                    <p class="skill-name">SQL</p>
-                </div>
-                <div class="skill-item">
-                    <img src="image\backend\batabase\mangodb.png" alt="Python" class="skill-img">
-<<<<<<< HEAD
-                    <p class="skill-name">MongoDB</p>
-=======
-                    <p class="skill-name">MangoDB</p>
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-                </div>
-                <div class="skill-item">
-                    <img src="image\backend\batabase\oracle.png" alt="Python" class="skill-img">
-                    <p class="skill-name">Oracle Database</p>
-                </div>
-
-            </div>
-
-    </section>
-    <!--Services Section-->
-    <!-- service 1  -->
-
-
-    <h2 class="title">My Expertise And Services</h2>
-
-    <section id="services" class="services">
-
-        <div class="service">
-            <div class="index"></div>
-<<<<<<< HEAD
-            <div class="service-title">FullStack Developer</div>
-            <img src="image\services\softwaredevelopment.png" alt="Web Development">
-            <div class="overlay">FullStack Developer</div>
-        </div>
-
-
-        <div class="service">
-=======
-            <div class="service-title">Software development</div>
-            <img src="image\services\softwaredevelopment.png" alt="Web Development">
-            <div class="overlay">software development</div>
-        </div>
-        <div class="service">
-
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-            <div class="service-title">Backend Development</div>
-            <img src="image\services\backenddep.png" alt="Graphic Design">
-            <div class="overlay">Backend Developer</div>
-        </div>
-<<<<<<< HEAD
-
-        <div class="service">
-
-            <div class="service-title">Software Engineering </div>
-            <img src="image\services\software.png" alt="SEO Optimization">
-            <div class="overlay">Software Engineering</div>
-        </div>
-
-
-
-=======
-        <div class="service">
-
-            <div class="service-title">Software Engineering services</div>
-            <img src="image\services\software.png" alt="SEO Optimization">
-            <div class="overlay">Software Engineering</div>
-        </div>
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-        <div class="service">
-
-            <div class="service-title">WordPress</div>
-            <img src="image\services\wordpress.png" alt="Digital Marketing">
-            <div class="overlay">WordPress</div>
-        </div>
-        <div class="service">
-
-            <div class="service-title">Digital Marketing</div>
-            <img src="image\services\digitalmarketin.png" alt="Digital Marketing">
-            <div class="overlay">Digital Marketing</div>
-        </div>
-        <div class="service">
-
-            <div class="service-title">Project Management</div>
-            <img src="image\services\project management.png" alt="Digital Marketing">
-            <div class="overlay">Project Management</div>
-        </div>
-
-    </section>
-
-
-    <!--Project section Done-->
-
-
-    <h2 id="Projects" class="title">My Project And Works</h2>
-    <section class="projects-section" id="project">
-
-        <div class="projects-grid">
-            <div class="project-card">
-<<<<<<< HEAD
-                <img src="image\project\aiml.png" alt="Project 1" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">HealthMate Symptom Checker Health </h3>
-                    <p class="project-description">
-
-                        This AI/ML project predicts diseases and provides health suggestions
-                        by analyzing medical data and user symptoms using Natural
-                        Language Processing (NLP) and machine learning techniques. </p>
-                    <a href="https://healthmate-symptom-checker-health-rem4.onrender.com" target="_blank"
-                        class="project-link">View Demo</a>
-                    <a href="https://github.com/ishansingh7/HealthMate-Symptom-Checker-Health-Suggestion-Bot"
-                        target="_blank" class="project-link">View Project</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="image\project\delivery.png" alt="Project 1" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Delivery Tracking and Logistic</h3>
-                    <p class="project-description">
-
-                        A Delivery & Logistics Management App using MongoDB, Node.js, React, and Express.js 
-                        allows users to manage
-                   orders, track deliveries, assign drivers, optimize routes, and monitor real-time shipment status with 
-                           authentication,
-                     role-based access, analytics tracking, and a user-friendly interface. </p>
-                    <a href="https://moveyeasy.vercel.app" target="_blank"
-                        class="project-link">View Demo</a>
-                    <a href="https://github.com/ishansingh7/Delivery-Tracking-and-Logistic-Management"
-                        target="_blank" class="project-link">View Project</a>
-                </div>
-            </div>
-
-
-            <div class="project-card">
-                <img src="image\project\tra.png" alt="Project 1" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">TravelGo </h3>
-                    <p class="project-description">A modern web application to plan, book,
-                        and manage your travels effortlessly — including flights,
-                        trains, buses, taxis, hotels, and international tour packages!
-
-                    </p>
-                    <a href="https://bespoke-daifuku-66ff35.netlify.app" target="_blank" class="project-link">Live
-                        Demo</a>
-                    <a href="https://github.com/ishansingh7/TravelGo?tab=readme-ov-file" target="_blank"
-                        class="project-link">Github</a>
-
-
-                </div>
-            </div>
-
-
-
-=======
-                <img src="image\project\nepal resale.png" alt="Project 1" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Nepal Resale </h3>
-                    <p class="project-description">This Automobile Buying and Selling platform using WordPress, a vendor
-                        management system, and HTML codes as a freelancer.. </p>
-                    <a href="https://nepalresale.com" target="_blank" class="project-link">View Project</a>
-                </div>
-            </div>
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-            <div class="project-card">
-                <img src="image\project\neo valley education.png" alt="Project 1" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Neo Valley Education</h3>
-                    <p class="project-description">This is the Education Consultancy website, developed in WordPress
-                        with different plugins and HTML as a freelancer.</p>
-<<<<<<< HEAD
-                    <a href="https://neovalleyeducation.com" class="project-link">View Project</a>
-=======
-                    <a href=https://neovalleyeducation.com" class="project-link">View Project</a>
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="image\project\lnaguage.png" alt="Project 1" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">language Translator</h3>
-                    <p class="project-description">This web Application which transaltes all kinds of the language .
-                        It is developed using python , HTML,Django ,CSS</p>
-                    <a href="https://github.com/ishansingh7/python-language-translator-" class="project-link">View
-                        Project</a>
-                </div>
-            </div>
-<<<<<<< HEAD
-                  <div class="project-card">
-                <img src="image/project/governmnet.png" alt="Project 1" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Government Analytics Dashboaard</h3>
-                    <p class="project-description">TA modern web application to raise 
-                        complaints against government ministries and analyze their performance, 
-                        budget allocation, and project progress.
-
-🚨 Raise complaints • 📈 Track complaint status • 💰 Budget transparency • 🏛️ Ministry performance insights
-
-</p>
-                    <a href="https://github.com/ishansingh7/Government-Analytics-Dashboaard" class="project-link">View
-                        Project</a>
-                </div>
-              </div>
-
-
-
-
-=======
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-            <div class="project-card">
-                <img src="image\project\pohoramalae.png" alt="Project 1" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Phohor Malai</h3>
-                    <p class="project-description">This project was developed during the Project Expo at the end of the
-                        second semester.
-                        It is built using HTML,
-                        CSS, JavaScript, and an external website to manage environmental waste.</p>
-                    <a href="https://github.com/ishansingh7/waste-management-website" class="project-link">View
-                        Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="image\project\bank.png" alt="Project 1" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Bank Management system</h3>
-                    <p class="project-description">This application is developed in
-                        <br>Java and SQL database management
-                        during an internship at a training company.
-                    </p>
-                    <a href="https://github.com/ishansingh7/Banking-Application" class="project-link">View Project</a>
-                </div>
-            </div>
-            <!-- Add more project cards -->
-        </div>
-    </section>
-
-    <!--end of Project Section-->
-<<<<<<< HEAD
-    <!--Start up Section-->
-
-
-    <section class="startup-section">
-        <h1>Start Up</h1>
-        <div class="logo-frame">
-            <img src="image\logonepal.jpg" alt="Startup Logo" />
-        </div>
-        <h1>Nepal Technical Assocaitaion </h1>
-        <p>Founded in 2020, this dynamic startup has swiftly emerged as a powerhouse in
-            IT services and consulting. Specializing in website creation, they deliver
-            visually stunning and functional designs tailored to client needs. Their
-            expertise in engineering and design ensures innovative, efficient solutions,
-            while their skilled developers craft custom software to tackle real-world
-            challenges. With cutting-edge digital marketing strategies, they amplify
-            online presence, driving engagement and growth. Offering a comprehensive
-            suite of services, this startup empowers businesses to thrive in the digital
-            era with creativity, precision, and impact.</p>
-        <div class="social-links">
-            <a href="https://nepaltechnicalassociation.netlify.app" target="_blank" class="linkedin"
-                aria-label="LinkedIn">
-                <img src="image\socail icons/logonepal1.png" alt="LinkedIn">
-            </a>
-            <a href="https://www.facebook.com/nepalInfoTechsolution" target="_blank" class="facebook"
-                aria-label="Facebook">
-                <img src="image\socail icons\facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/nepaltechnicalassociation/" target="_blank" class="instagram"
-                aria-label="Twitter">
-                <img src="image\socail icons\insta.png" alt="Twitter">
-            </a>
-            <a href="https://www.linkedin.com/company/nepal-technical-association/posts/?feedView=all" target="_blank"
-                class="linkedin" aria-label="LinkedIn">
-                <img src="image\socail icons\link.png" alt="LinkedIn">
-            </a>
-        </div>
-    </section>
-
-=======
-<!--Start up Section-->
-
-
-<section class="startup-section">
-    <h1>Start Up</h1>
-    <div class="logo-frame">
-        <img src="image\nepaltechnical.png" alt="Startup Logo" />
-    </div>
-    <h1>Nepal Technical Assocaitaion </h1>
-    <p>Founded in 2020, this dynamic startup has swiftly emerged as a powerhouse in
-         IT services and consulting. Specializing in website creation, they deliver
-          visually stunning and functional designs tailored to client needs. Their 
-          expertise in engineering and design ensures innovative, efficient solutions,
-           while their skilled developers craft custom software to tackle real-world 
-           challenges. With cutting-edge digital marketing strategies, they amplify 
-           online presence, driving engagement and growth. Offering a comprehensive 
-           suite of services, this startup empowers businesses to thrive in the digital 
-           era with creativity, precision, and impact.</p>
-    <div class="social-links">
-        <a href="https://www.facebook.com/nepalInfoTechsolution" target="_blank"class="facebook" aria-label="Facebook">
-            <img src="image\socail icons\facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/nepaltechnicalassociation/"target="_blank" class="instagram" aria-label="Twitter">
-            <img src="image\socail icons\insta.png" alt="Twitter">
-        </a>
-        <a href="https://www.linkedin.com/company/nepal-technical-association/posts/?feedView=all"target="_blank" class="linkedin" aria-label="LinkedIn">
-            <img src="image\socail icons\link.png" alt="LinkedIn">
-        </a>
-    </div>
-</section>
-
-  
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-
-
-
-
-
-    <!--JavaScript Section-->
-    <script src="js/script2.js"></script>
-
-    <script src="js/script.js"></script>
-
-
-<<<<<<< HEAD
-    <!--Clinet Section-->
-    <section class="clients-section">
-        <h2>Working With Our Clients</h2>
-
-        <div class="clients-grid">
-            <div class="client-card">
-                <img src="image/clinet/ppcc.png" alt="Client 1 Logo">
-                <div class="client-name">Pioneer Professional Chartered Co.</div>
-            </div>
-
-            <div class="client-card">
-                <img src="image/clinet/softgrid.png" alt="Client 2 Logo">
-                <div class="client-name">SoftGrid Technology</div>
-            </div>
-
-            <div class="client-card">
-                <img src="image/clinet/onlineestore.png" alt="Client 3 Logo">
-                <div class="client-name">Online E-Store</div>
-            </div>
-            <div class="client-card">
-                <img src="image/project/nepal resale.png" alt="Client 3 Logo">
-                <div class="client-name">Nepal Resale</div>
-            </div>
-
-            <div class="client-card">
-                <img src="image/clinet/hello.png" alt="Client 4 Logo">
-                <div class="client-name">Hello Job KTM</div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!--Contact Section-->
-    <section class="contact-section">
-        <div class="contact-container">
-
-            <!-- Left Side: Form -->
-            <div class="contact-form">
-                <h2>Write us</h2>
-                <form action="#" method="post">
-                    <div class="input-box">
-                        <input type="text" name="name" required>
-                        <label>Name</label>
-                    </div>
-                    <div class="input-box">
-                        <input type="email" name="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" name="subject" required>
-                        <label>Subject</label>
-                    </div>
-                    <div class="input-box textarea">
-                        <textarea name="message" required></textarea>
-                        <label>Message</label>
-                    </div>
-                    <button type="submit" class="send-btn">Send Message</button>
-                </form>
-            </div>
-
-            <!-- Right Side: Info -->
-            <div class="contact-info">
-                <h3>Contact information</h3>
-                <p>We’re open for any suggestion or just to have a chat</p>
-
-                <div class="info-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <h4> Premanent Address:</h4>
-                        <p><br>Kathmandu,Nepal</p>
-                        <h4> Current Address:</h4>
-                        <p><br>Bengaluru,India</p>
+                        <a href="https://www.facebook.com/nepalInfoTechsolution" target="_blank" aria-label="Facebook">
+                            <img src="image/socail icons/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/nepaltechnicalassociation/" target="_blank" aria-label="Instagram">
+                            <img src="image/socail icons/insta.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.linkedin.com/company/nepal-technical-association/posts/?feedView=all" target="_blank" aria-label="LinkedIn">
+                            <img src="image/socail icons/link.png" alt="LinkedIn">
+                        </a>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="info-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <div>
-                        <h4>Phone:</h4>
-                        <p>
-                            <img src="https://flagcdn.com/w20/np.png" alt="Nepal Flag"
-                                style="width: 22px; height: 15px; margin-right: 8px; vertical-align: middle; border-radius: 2px;">
-                            +977-9863467391
-                        </p>
+        <section class="section-block clients-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Trusted By</p>
+                    <h2>Clients and Collaborations</h2>
+                    <p>Some of the brands, organizations, and businesses I have worked with or supported.</p>
+                </div>
 
-                        <p>
-                            <img src="https://flagcdn.com/w20/in.png" alt="India Flag"
-                                style="width: 22px; height: 15px; margin-right: 8px; vertical-align: middle; border-radius: 2px;">
-                            +91-7483937126
-                        </p>
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <img src="image/clinet/ppcc.png" alt="Pioneer Professional Chartered Co. logo">
+                        <div class="client-name">Pioneer Professional Chartered Co.</div>
+                    </div>
+                    <div class="client-card">
+                        <img src="image/clinet/softgrid.png" alt="SoftGrid Technology logo">
+                        <div class="client-name">SoftGrid Technology</div>
+                    </div>
+                    <div class="client-card">
+                        <img src="image/clinet/onlineestore.png" alt="Online E-Store logo">
+                        <div class="client-name">Online E-Store</div>
+                    </div>
+                    <div class="client-card">
+                        <img src="image/project/nepal resale.png" alt="Nepal Resale logo">
+                        <div class="client-name">Nepal Resale</div>
+                    </div>
+                    <div class="client-card">
+                        <img src="image/clinet/hello.png" alt="Hello Job KTM logo">
+                        <div class="client-name">Hello Job KTM</div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="info-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>
-                        <h4>Email:</h4>
-                        <p>helloishansingh@gmail.com</p>
+        <section id="contact" class="section-block">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <p class="section-kicker">Contact</p>
+                        <h2>Let's Build Something Useful</h2>
+                        <form action="#" method="post">
+                            <div class="input-box">
+                                <input type="text" name="name" required>
+                                <label>Name</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" name="email" required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" name="subject" required>
+                                <label>Subject</label>
+                            </div>
+                            <div class="input-box textarea">
+                                <textarea name="message" required></textarea>
+                                <label>Message</label>
+                            </div>
+                            <button type="submit" class="send-btn">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>I'm open to freelance work, collaborations, internships, and software opportunities.</p>
+
+                        <div class="info-item">
+                            <i class="bx bx-map"></i>
+                            <div>
+                                <h4>Permanent Address</h4>
+                                <p>Kathmandu, Nepal</p>
+                                <h4>Current Address</h4>
+                                <p>Bengaluru, India</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="bx bx-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+977-9863467391</p>
+                                <p>+91-7483937126</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="bx bx-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>helloishansingh@gmail.com</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                
             </div>
-        </div>
-=======
-    <!--Contact Section-->
-    <section class="contact-me" id="contact-loc">
-        <h1>Contact Me</h1>
-        <div class="contact">
-            <div class="contact-card">
-                <a href="mailto:helloishansingh@gmail.com" class="contact-link">
-                    <i class="ri-message-3-line"></i>
-                    <p>helloishansingh@gmail.com</p>
-                </a>
-            </div>
-            <div class="contact-card">
-                <a href="tel:+917483937126" class="contact-link"">
-                    <i class=" ri-phone-line"></i>
-                    <p>+917483937126 (India)<br>
-                        +9779863467391(Nepal)</p>
-                    </a>
-            </div>
-
-            <div class="contact">
-                <div class="contact-card">
-                    <a class="contact-link">
-
-                        <p>Kathmandu Nepal</p>
-                    </a>
-
-
-                </div>
->>>>>>> 715ee770d603d0b2e6963814faf974cf18fce5c5
-    </section>
+        </section>
+    </main>
 
     <footer>
-
-        <p>&copy; 2025 ISHAN . All rights reserved.</p>
-
+        <p>&copy; 2025 Ishan Singh. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
